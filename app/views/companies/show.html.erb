@@ -4,3 +4,8 @@
   <p><%= @company.mail %></p>
   <p><%= @company.phone %></p>
 </section>
+
+<% @company.jobs.each do |job| %>
+  <%= job.title %>
+  <%= job.category %>
+<% end %>
