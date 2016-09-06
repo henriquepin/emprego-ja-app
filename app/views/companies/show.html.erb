@@ -9,3 +9,7 @@
   <%= job.title %>
   <%= job.category %>
 <% end %>
+
+<% if @company.jobs.empty? %>
+  <h2>Nenhuma vaga disponível</h2>
+<% end %>
